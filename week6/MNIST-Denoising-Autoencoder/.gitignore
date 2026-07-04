@@ -1,0 +1,35 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/MNIST/raw/*.csv
+data/MNIST/processed/*.npy
+
+# Model artifacts
+outputs/checkpoints/*.h5
+outputs/checkpoints/*.keras
+outputs/logs/*
+outputs/history/*.csv
+outputs/figures/*.png
+!outputs/checkpoints/.gitkeep
+!outputs/logs/.gitkeep
+!outputs/history/.gitkeep
+!outputs/figures/.gitkeep
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# TensorBoard
+logs/
