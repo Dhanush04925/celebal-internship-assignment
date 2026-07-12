@@ -13,6 +13,14 @@ from langchain.chains import RetrievalQA
 
 load_dotenv()
 
+load_dotenv()
+
+# Read API key from Streamlit Cloud Secrets or local .env
+if "GROQ_API_KEY" in st.secrets:
+    groq_key = st.secrets["GROQ_API_KEY"]
+else:
+    groq_key = os.getenv("GROQ_API_KEY", "")
+
 st.set_page_config(page_title="RAG Document QA", page_icon="📄", layout="wide")
 st.title("📄 RAG Document Question Answering System")
 
