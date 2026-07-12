@@ -1,0 +1,17 @@
+streamlit
+langchain==0.3.13
+langchain-community==0.3.13
+langchain-groq==0.2.1
+langchain-huggingface==0.1.2
+
+sentence-transformers
+transformers
+huggingface-hub
+
+faiss-cpu>=1.14.2
+
+pypdf
+docx2txt
+python-dotenv
+rank-bm25
+pandas

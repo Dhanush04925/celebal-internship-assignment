@@ -1,0 +1,57 @@
+Data Engineering Onboarding Notes
+
+Section 1: What a Data Engineer Does
+A data engineer builds and maintains the systems that collect, move, and store data
+so that analysts, scientists, and applications can use it reliably. The core
+responsibility is building pipelines: automated processes that pull data from a
+source, transform it into a usable shape, and load it into a destination such as a
+warehouse or a database. This is commonly shortened to ETL (Extract, Transform,
+Load) or, when transformation happens after loading, ELT.
+
+Section 2: Batch vs Streaming Pipelines
+Batch pipelines process data in scheduled chunks, for example once every hour or
+once a day. They are simpler to build and debug, and are a good fit when a small
+delay between data being generated and being usable is acceptable. Streaming
+pipelines process events as they arrive, often using tools such as Kafka or
+Spark Structured Streaming, and are used when near-real-time freshness matters,
+such as fraud detection or live dashboards. Most production data platforms end up
+running a mix of both.
+
+Section 3: Data Warehouses vs Data Lakes
+A data warehouse stores structured, cleaned data in a fixed schema, optimized for
+fast analytical queries. A data lake stores raw data in its native format, including
+unstructured and semi-structured data, and applies structure only when the data is
+read. Many modern platforms use a lakehouse architecture, which combines the low-cost
+flexible storage of a lake with the reliability and query performance guarantees of
+a warehouse.
+
+Section 4: Orchestration
+Pipelines rarely run as a single script. They are broken into a sequence of tasks
+with dependencies between them, and an orchestrator schedules and monitors these
+tasks, retries failures, and alerts engineers when something breaks. Apache Airflow
+represents pipelines as directed acyclic graphs, or DAGs, where each node is a task
+and edges represent order of execution.
+
+Section 5: Data Quality
+A pipeline that runs successfully is not the same as a pipeline that produces correct
+data. Data quality checks validate assumptions about the data at each stage, such as
+checking that a column has no nulls, that values fall within an expected range, or
+that row counts match between source and destination. Catching a quality issue at
+the pipeline level is far cheaper than catching it after a dashboard has already
+shown wrong numbers to a decision maker.
+
+Section 6: Working with Data Scientists and ML Engineers
+Data engineers are usually the ones who build and maintain the feature pipelines
+that supply data scientists and ML engineers with training and inference data. A
+common failure point in production ML systems is training-serving skew, where the
+data available at inference time is computed differently than the data used during
+training. Keeping feature computation logic in one shared place, rather than
+duplicated between training and serving code, is one of the most effective ways to
+avoid this.
+
+Section 7: Practical Onboarding Checklist
+New data engineers on a team should get access to the data warehouse, the version
+control repository for pipeline code, the orchestration tool's dashboard, and any
+data catalog or documentation tool the team uses. It is worth spending the first
+week tracing one existing pipeline end to end, from its source system to the final
+table or dashboard it feeds, before writing any new code.

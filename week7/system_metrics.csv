@@ -1,0 +1,10 @@
+Metric,Value
+Documents,1
+Chunks,5
+Chunk Size,500
+Chunk Overlap,100
+Embedding Model,all-MiniLM-L6-v2
+Embedding Dimension,384
+Vector Store,FAISS
+Retriever,Similarity Search
+LLM,Groq Llama-3.1-8B
