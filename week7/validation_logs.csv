@@ -1,0 +1,40 @@
+Question,Answer,Retrieved Chunks,Time (sec)
+What is the candidate's name?,Dhanush Chiraboina,3,0.15
+What is the highest educational qualification?,B.Tech in Computer Science and Engineering (AI & ML) from CVR College of Engineering.,3,0.31
+Which programming languages does the candidate know?,"The candidate knows the following programming languages:
+
+1. Python
+2. Java
+3. SQL",3,0.15
+What machine learning projects has the candidate completed?,"The candidate has completed the following machine learning project:
+
+1. Smart Canteen Management Decision Support System: Developed an ML-based demand forecasting system using Random Forest to predict next-day food demand by analysing historical sales, weather, and exam schedules.",3,0.18
+What technical skills are listed in the resume?,"The technical skills listed in the resume are:
+
+1. Programming: Python, Java, SQL
+2. Web Technologies: HTML, CSS, JavaScript
+3. Machine Learning: Supervised Learning, Unsupervised Learning, Feature Engineering, Model Training
+4. Deep Learning: ANN, CNN, RNN, LSTM, GRU
+5. Generative AI: RAG, LangChain (Basic)",3,0.27
+What internships has the candidate completed?,I could not find the answer in the uploaded documents.,3,0.16
+Which certifications are mentioned?,Salesforce AgentBlazer and Database Programming with SQL– Oracle Academy.,3,0.55
+What are the candidate's contact details?,"The candidate's contact details are:
+
+- Phone: +91-9391544253
+- Email: dhanushyadav0099@gmail.com
+- LinkedIn: linkedin.com/in/dhanush-chiraboina
+- GitHub: github.com/Dhanush04925",3,0.18
+What tools and frameworks has the candidate worked with?,"The candidate has worked with the following tools and frameworks:
+
+1. Programming languages: Python
+2. Deep Learning frameworks: TensorFlow
+3. Data Analysis libraries: Pandas, NumPy
+4. Data Visualization library: Matplotlib
+5. Natural Language Processing library: NLTK
+6. Computer Vision library: OpenCV
+7. Machine Learning library: Scikit-learn
+8. Generative AI frameworks: RAG, LangChain
+9. Notebooks: Jupyter Notebook, Google Colab
+10. Version control tool: Git, GitHub
+11. SQL: Oracle Academy (Database Programming with SQL)",3,0.45
+Summarize the candidate's profile.,"The candidate, Dhanush Chiraboina, is a Computer Science student at CVR College of Engineering with strong foundations in Machine Learning and Deep Learning. He has experience in building and deploying data-driven applications using Python, and possesses solid Data Structures and Algorithms (DSA) and problem-solving skills.",3,0.21
